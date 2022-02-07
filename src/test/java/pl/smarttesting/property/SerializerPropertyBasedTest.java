@@ -22,7 +22,7 @@ class SerializerPropertyBasedTest {
 
 	@Test
 	@Disabled("will fail")
-	public void should_serialize_text_to_file() {
+	void should_serialize_text_to_file() {
 		File temp = new File(tmp, "test.txt");
 
 		qt()
