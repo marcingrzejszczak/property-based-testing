@@ -9,9 +9,7 @@ public class SerializationUtils {
 
 	public static void serialize(Path path, String text) {
 		try {
-			// We're storing in US_ASCII but we're writing UTF-8 chars
-//			Files.write(path, text.getBytes(StandardCharsets.US_ASCII));
-			Files.write(path, text.getBytes(StandardCharsets.UTF_8));
+			Files.write(path, text.getBytes(StandardCharsets.US_ASCII));
 		}
 		catch (IOException e) {
 			throw new IllegalStateException(e);
