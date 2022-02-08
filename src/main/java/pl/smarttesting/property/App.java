@@ -6,6 +6,6 @@ package pl.smarttesting.property;
  */
 public class App {
 	public static void main(String[] args) {
-		System.out.println(new Calculator().add(Integer.MAX_VALUE, 1));
+
 	}
 }
